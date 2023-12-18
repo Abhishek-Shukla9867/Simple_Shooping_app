@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        html, body {
+            width: 100%;
+            height: 100%;
+            
+        }
+
+        .bag{
+          
+            display: flex;
+            justify-content: center;
+          
+            ;
+        }
+        button{
+            background-color: black;
+            color: white;
+            border-radius: 5px;
+            margin: 20px;
+          
+        }
+        h2{
+            background-color: blue;
+            width: 300px;
+            height: 30px;
+            color: white;
+           border-radius: 4px;
+        }
+
+    </style>
+</head>
+<body>
+  <center> <h2> Shooping App </h2></center>
+    <div class="bag">
+
+        <button id="add" onclick="card_Quantity++
+        document.querySelector('#carts').innerHTML=`Your Bag has ${card_Quantity}`"
+        >Add Item</button>
+
+
+        <button id="remove" onclick="card_Quantity--
+        document.querySelector('#carts').innerHTML=`Your Bag has ${card_Quantity}`"
+        
+        >Remove Item </button>
+
+
+        <button id="2xadd" onclick="card_Quantity+=2
+         document.querySelector('#carts').innerHTML=`Your Bag has ${card_Quantity}`"
+
+
+        >Add +  2 Item </button> 
+ 
+
+    </div>
+
+    <div id="carts" ></div> 
+
+ <script>
+ 
+
+   let card_Quantity =0;
+  document.querySelector('#carts').innerHTML=`Your Bag has ${card_Quantity}`
+  
+
+
+
+
+ </script>
+
+
+
+
+
+</body>
+</html>
